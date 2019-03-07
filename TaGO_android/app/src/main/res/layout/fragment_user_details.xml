@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/close"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_close"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_user_1"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/user_image"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_setting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_full_name"
+                android:layout_below="@id/user_image"
+                android:layout_centerHorizontal="true"
+                android:text="Student"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/rel_user_1"
+        android:background="@drawable/white_grey_border_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_first_name">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/rel_user_username">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_username"
+                    android:layout_centerVertical="true"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/rel_user_email"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rel_user_username">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_email"
+                    android:layout_centerVertical="true"
+                    android:text="User Email"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/rel_user_password"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/rel_user_email">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_password"
+                    android:layout_centerVertical="true"
+                    android:text="Change Password"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
